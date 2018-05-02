@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content=“César Collao Apablaza”>
+    <meta name="description" content=“Hoja de Vida de César Collao Apablaza“>
+    <title>Mi primer ejercicio en HTML</title>
+
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/logo_cca.svg" alt="Logo" title="CCA">
+    <h1>Hoja de Vida</h1>
+    <h2>César Collao.</h2>
+    <h3>Nacido el 10 de noviembre de 1981 en Viña del Mar, Chile.</h3>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="educacion.html">Educación</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+    </ul>
+    <h2>Educación</h2>
+    <table style="border: 1px solid black">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2006</td>
+          <td>Universidad de Playa Ancha</td>
+          <td>Valparaiso, Chile</td>
+          <td>Sí</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>Universidad de Chile</td>
+          <td>Santiago, Chile</td>
+          <td>Sí</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Universidad Bernardo O'Higgins</td>
+          <td>Santiago, Chile</td>
+          <td>Sí</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Agregar Estudios</h3>
+    <form id="frm_estudios" name="frm_estudios" autocomplete="off" target="_parent" method="post" action="educacion.html">
+      <label for="ano"><strong>Año: </strong></label>
+      <input id="ano" name="ano" type="number" min="1980" max="2018" value="2018"><br>
+      <label for="institucion"><strong>Institución: </strong></label>
+      <input id="institucion" name="institucion" type="text"><br>
+      <label for="lugar"><strong>Lugar: </strong></label>
+      <input id="lugar" name="lugar" type="text"><br>
+      <label for="culmino"><strong>Culminó: </strong></label>
+      <input id="culmino" name="culmino" type="radio" value="si">Sí
+      <input id="culmino" name="culmino" type="radio" value="no">No
+      <br>
+      <input id="enviar" name="enviar" type="submit" value="Enviar">
+    </form>
+  </body>
+  <footer>
+    <h2>Datos de Contacto</h2>
+    <ul>
+      <li><strong>Email: </strong><a href="mailto:cesarcollao@gmail.com">cesarcollao@gmail.comz</a></li>
+      <li><strong>Teléfono: </strong><a href="tel:+56976450720">+56976450720</a></li>
+    </ul>
+  </footer>
+</html>
